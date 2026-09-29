@@ -2433,6 +2433,26 @@ body.locked .fab{opacity:0; pointer-events:none}
     min-height:48px;
   }
 }
+.brand{
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+}
+
+.brand-logo{
+  display:block;
+  width:auto;
+  height:48px;
+  max-width:180px;
+  object-fit:contain;
+}
+
+@media (max-width:767.98px){
+  .brand-logo{
+    height:56px;
+    max-width:150px;
+  }
+}
 </style>
 </head>
 <body>
@@ -2442,12 +2462,12 @@ body.locked .fab{opacity:0; pointer-events:none}
 <header class="app-head" id="head">
   <div class="shell head-in">
     <a href="#top" class="brand" aria-label="Madina Marble home">
-      <span class="brand-mark" aria-hidden="true">MM</span>
-      <span class="brand-txt">
-        <span class="brand-name">Madina Marble</span>
-        <span class="brand-sub">Tiles · Marble · Panels</span>
-      </span>
-    </a>
+  <img
+    src="logo-modina.png"
+    alt="Madina Marble"
+    class="brand-logo"
+  >
+</a>
 
     <nav class="nav-desk" id="navDesk" aria-label="Primary">
       <a href="#materials">Materials</a>
